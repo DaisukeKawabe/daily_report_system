@@ -15,18 +15,24 @@ import models.Employee;
 import models.Report;
 import utils.DBUtil;
 
-
+/**
+ * Servlet implementation class TopPageIndexServlet
+ */
 @WebServlet("/index.html")
 public class TopPageIndexServlet extends HttpServlet {
         private static final long serialVersionUID = 1L;
 
-   
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
     public TopPageIndexServlet() {
         super();
-       
+        // TODO Auto-generated constructor stub
     }
 
-   
+    /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         EntityManager em = DBUtil.createEntityManager();
 
